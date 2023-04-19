@@ -1,4 +1,4 @@
-const inputCheck = require('../utils/inputCheck');
+const inputCheck = require('../db/utils/inputCheck.js');
 
 test('inputCheck() returns null when all properties exist', () => {
   const obj = {name: 'alice'};
@@ -15,3 +15,4 @@ test('inputCheck() returns an object when a property is missing', () => {
     })
   );
 });
+
